@@ -1,0 +1,67 @@
+{
+	"arbiter" : 
+	{
+		"class" : "slipspacer",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "The Arbiter",
+			"biography" : "The Arbiter is a ceremonial, religious, and political rank bestowed upon Covenant Elites. The rank was given to this disgraced commander as a way to atone for his failures, and it is expected for him to die serving the Covenant leadership.", 
+			"specialty" :
+			{
+				"description" : "The Arbiter is able to train elites into a higher class of warrior.",
+				"tooltip" : "Special Training.",
+				"name" : "Special Training"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "covenant/heroes/arbiter/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/arbiter/spec-large.bmp",
+			"large" : "covenant/heroes/arbiter/portrait-large.bmp",
+			"small" : "covenant/heroes/arbiter/portrait-small.bmp"
+		},
+		"army" :
+		[
+			{
+				"creature" : "cvElite",
+				"max" : 4,
+				"min" : 1
+			},
+			{
+				"creature" : "cvElite",
+				"max" : 4,
+				"min" : 1
+			},
+			{
+				"creature" : "cvElite",
+				"max" : 4,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"base" : {
+				"addInfo" : "creature.cvElite3",
+				"type" : "SPECIAL_UPGRADE"
+			},
+			"bonuses" : {
+				"cvElite2cvElite3" : { "subtype" : "creature.cvElite" },
+				"cvElite22cvElite3" : { "subtype" : "creature.cvElite2" }
+			}
+		}
+	}
+}

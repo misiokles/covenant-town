@@ -1,0 +1,87 @@
+{
+	"cvHunter":
+	{
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"name" :
+		{
+			"plural" : "Hunters",
+			"singular" : "Hunter"
+		},
+		"faction": "covenant",
+		"aiValue" : 696,
+		"fightValue" : 651,
+		"attack" : 9,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 350
+		},
+		"damage" :
+		{
+			 "min" : 6,
+			 "max" : 10
+		},
+		"speed" : 6,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/Fighter.def",
+			"map" : "covenant/map/Fighter.def",
+			"iconSmall" : "covenant/iconsSmall/Fighter.bmp",
+			"iconLarge" : "covenant/iconsBig/Fighter.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			},
+            	"missile" :
+			{
+				"projectile" : "PMAGEX.def",
+				"attackClimaxFrame" : 1,
+				"offset" :
+				{
+					"upperX" : 40,
+					"upperY" : -50,
+					"middleX" : 50,
+					"middleY" : -50,
+					"lowerX" : 20,
+					"lowerY" : -10
+				},
+				"frameAngles" : [90, 70, 40, 20, 0, -20, -40, -50, -50, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 40,
+		"doubleWide" : true,
+		"upgrades":
+		[
+			"cvGreatHunter"
+		],				
+		"growth" : 4,
+		"level" : 4,
+		"shots" : 24,		
+		"sound" :
+		{
+			"attack" : "covenant/S205ATTK.wav",
+			"defend" : "covenant/S205DFND.wav",
+			"killed" : "covenant/S205KILL.wav",
+			"move" : "covenant/S205MOVE.wav",
+			"wince" : "covenant/S205WNCE.wav"
+		},
+		"abilities" :
+		{
+                     "canshoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+		      }
+		}
+	}
+}

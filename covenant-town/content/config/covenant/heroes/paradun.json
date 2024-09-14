@@ -1,0 +1,59 @@
+{
+	"paradun" :
+	{
+		"class" : "councillor",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Paradun",
+			"biography" : "nothing here.",
+			"specialty" :
+			{
+				"description" : "Hero can cast the Shield spell with increased effectiveness.",
+				"tooltip" : "Hero can cast the Shield spell with increased effectiveness.",
+				"name" : "Shield"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/paradun/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/paradun/spec-large.bmp",
+			"large" : "covenant/heroes/paradun/portrait-large.bmp",
+			"small" : "covenant/heroes/paradun/portrait-small.bmp"
+		},
+
+		"spellbook" :
+		[
+			"shield"
+		],
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"shield" : {
+						"type": "SPECIAL_SPELL_LEV",
+						"subtype": "spell.shield",
+						"val": 5
+				}
+			}
+		}
+	}
+}

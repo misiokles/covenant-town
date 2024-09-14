@@ -1,0 +1,85 @@
+{
+	"cvJackalMajor":
+	{
+		"name" :
+		{
+			"plural" : "Jackal Majors",
+			"singular" : "Jackal Major"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "covenant",
+		"aiValue" : 179,
+		"attack" : 7,
+		"hasDoubleWeek" : true,
+         "cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 2
+		},
+		"defense" : 6,
+		"fightValue" : 189,
+		"horde" : 6,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/CR198.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "covenant/map/footsoldier.def",
+			"iconSmall" : "covenant/iconsSmall/CPrS198F.bmp",
+			"iconLarge" : "covenant/iconsBig/CPrL198B.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "covenant/battle/projectile/SHOT198.DEF",
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"attackClimaxFrame" : 8,
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+
+		"growth" : 9,
+		"hitPoints" : 12,
+          "level" : 2,
+		"shots" : 12,
+		"sound" :
+		{
+			"attack" : "covenant/S198ATTK.wav",
+			"defend" : "covenant/S198DFND.wav",
+			"killed" : "covenant/S198KILL.wav",
+			"move"   : "covenant/S198MOVE.wav",
+			"wince"  : "covenant/S198WNCE.wav",
+                         "shoot" : "covenant/S198SHOT.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+		"generalDamageReduction" :
+			{
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				"val" : 20
+            },
+			"airShield":
+			{
+				"type":"GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val" : 20
+			}	
+		}
+	}
+}

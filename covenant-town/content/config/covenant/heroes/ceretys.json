@@ -1,0 +1,55 @@
+{
+	"ceretys" : 
+	{
+
+		"class" : "slipspacer",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Ceretys",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Increases kingdom's income by 350 gold per day.",
+				"tooltip" : "Increases kingdom's income by 350 gold per day.",
+				"name" : "+350 Gold"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/ceretys/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/ceretys/spec-large.bmp",
+			"large" : "covenant/heroes/ceretys/portrait-large.bmp",
+			"small" : "covenant/heroes/ceretys/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"gold" : {
+						"type": "GENERATE_RESOURCE",
+						"subtype": "resource.gold",
+						"val": 350
+                }
+			}
+		}
+	}
+}

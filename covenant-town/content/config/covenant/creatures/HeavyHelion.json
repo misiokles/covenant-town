@@ -1,0 +1,66 @@
+{
+	"cvHeavyHelion" : {
+		"abilities" :
+		{
+			"attacksAllAdjacent":
+			{
+				"type":"ATTACKS_ALL_ADJACENT"
+            },
+			"EARTH_IMMUNITY"	:
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "earth"
+			},
+			 "airShield":
+			{
+				"type":"GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val" :60
+			},
+			"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+			"directDamageImmunity" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 100
+			},		
+			"nonliving":
+			{	
+				"type" : "NON_LIVING"
+			}
+		},
+		"advMapAmount" : {"max" : 10, "min" : 4},
+		"aiValue" : 19072,
+		"attack" : 26,
+		"cost" : { "gold" : 3400, "mercury" : 2 },
+		"damage" : {"max" : 50, "min" : 40},
+		"defense" : 28,
+		"faction" : "covenant",
+		"fightValue" : 14595,
+		"graphics" : {
+			"animation" : "covenant/battle/CR210.def",
+			"animationTime" : { "attack" : 1, "idle" : 4, "walk" : 1.30 },
+			"map" : "covenant/map/7b.def",
+			"iconSmall" : "covenant/iconsSmall/CPrS210F.bmp",
+			"iconLarge" : "covenant/iconsBig/CPrL210B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 1,
+		"hitPoints" : 300,
+        "doubleWide" : true,
+		"level" : 7,
+		"name" : { "plural" : "Heavy Helions", "singular" : "Heavy Helion" },
+		"sound" : {
+			"attack" : "covenant/atak-high.wav",
+			"defend" : "covenant/defend-high.wav",
+			"killed" : "covenant/kill-high.wav",
+			"move"   : "covenant/move-high.wav",
+			"wince"  : "covenant/wince-high.wav"
+		},
+		"speed" : 10,
+		"upgrades" : [ "cvSiegesHelions" ]
+	}
+}

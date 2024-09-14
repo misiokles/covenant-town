@@ -1,0 +1,102 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"cvSpirit" : {
+				"name" : "Spirit",
+				"creatures" : [[ "cvGrunt" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-1.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"cvPhantom" : {
+				"name" : "Phantom",
+				"creatures" : [[ "cvJackal" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-2.def",
+						"mask" : [ "VVV", "VBA", "VVV" ]
+					}
+				}
+			},
+			"cvCorvette" : {
+				"name" : "Corvette",
+				"creatures" : [[ "cvDrone" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "covenant/map/dwellings/dwelling-3.def",
+						"mask" : [ "VVV", "VVB", "VBA" ]
+					}
+				}
+			},
+			"cvReplicator" : {
+				"name" : "Replicator",
+				"creatures" : [[ "cvHunter" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-4.def",
+						"mask" : [ "VVVV", "VVVV", "VVVB", "VVVA" ]
+					}
+				}
+			},
+			"cvEliteDrop" : {
+				"name" : "Elite Drop",
+				"creatures" : [[ "cvElite" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-5.def",
+						"mask" : [ "VVV", "VVB", "VVA" ]
+					}
+				}
+			},
+			"cvPortal" : {
+				"name" : "Portal of Te",
+				"creatures" : [[ "cvMehamorf" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-6.def",
+						"mask" : [ "VVV", "VVB", "VVA" ]
+					}
+				}
+			},
+			"cvSummit" : {
+				"name" : "Summit",
+				"creatures" : [[ "cvHelion" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-7.def",
+						"mask" : [ "VVV", "VVB", "VAB" ]
+					}
+				}
+			},
+			"cvAncientSummit" : {
+				"name" : "Ancient Summit",
+				"creatures" : [[ "cvSiegesHelions" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-8.def",
+						"mask" : [ "VVV", "VVB", "VAB" ]
+					}
+				}
+			},
+			"cvUfo" : {
+				"name" : "UFO",
+				"creatures" : [[ "cvBriteres" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "covenant/map/dwellings/dwelling-9.def",
+	
+						"mask" : [ "VVVV", "VVVV", "VBAB" ]
+				       }
+				}
+			}
+		}		
+	}
+}

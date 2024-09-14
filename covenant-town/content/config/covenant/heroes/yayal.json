@@ -1,0 +1,40 @@
+{
+	"yayal" : 
+	{
+		"class" : "slipspacer",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Yayal",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to luck skill.",
+				"tooltip" : "Starts with Advanced Luck.",
+				"name" : "Luck"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/yayal/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/yayal/spec-large.bmp",
+			"large" : "covenant/heroes/yayal/portrait-large.bmp",
+			"small" : "covenant/heroes/yayal/portrait-small.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty": {}
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"covenant" : {
+		"alignment" : "evil",
+		"creatureBackground" : { "120px" : "covenant/creature-bg-120px", "130px" : "covenant/creature-bg-130px" },
+		"name" : "Covenant",
+		"nativeTerrain" : "rough",
+		"boat" : "boatCastle",
+		"town" :
+		{
+			"musicTheme" : "music/covenant/theme",
+			"defaultTavern" : 5,
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"townBackground": "covenant/town-screen/background",
+			"guildWindow": "covenant/town-screen/mage-guild",
+			"hallBackground": "TPTHBKFR",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
+				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ],  ]
+			],
+			"creatures" :
+			[
+				[ "cvGrunt", "cvGrunt2" ],
+				[ "cvJackal", "cvJackalMajor" ],
+				[ "cvDrone", "cvWarDrone" ],
+				[ "cvHunter", "cvGreatHunter" ],
+				[ "cvElite", "cvElite2" ],
+				[ "cvMehamorf", "cvMehamorfWarrior"],
+				[ "cvHelion", "cvHeavyHelion" ]
+			],
+			"moatAbility" : "castleMoat",
+			"horde" : [ 1 , -1],
+			"mageGuild" : 5,
+			"primaryResource" : "mercury",
+			"warMachine" : "ballista",
+			"buildingsIcons" : "covenant/town-hall.def",
+			"icons" :
+			{
+				"village" : {
+					"normal" : {
+						"small" : "covenant/icons/hall-small.bmp",
+						"large" : "covenant/icons/hall-big.bmp"
+					},
+					"built" : {
+						"small" : "covenant/icons/hall-builded-small.bmp",
+						"large" : "covenant/icons/hall-builded-big.bmp"
+					}
+				},
+				"fort" : {
+					"normal" : {
+						"small" : "covenant/icons/fort-small.bmp",
+						"large" : "covenant/icons/fort-big.bmp"
+					},
+					"built" : {
+						"small" : "covenant/icons/fort-builded-small.bmp",
+						"large" : "covenant/icons/fort-builded-big.bmp"
+					}
+				}
+			},
+
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "covenant/map/town-capitol.def" },
+					"castle" : { "animation" : "covenant/map/town-castle.def" },
+					"citadel" : { "animation" : "covenant/map/town-castle.def" },
+					"fort" : { "animation" : "covenant/map/town-castle.def" },
+					"village" : { "animation" : "covenant/map/town-village.def" }
+				}
+			},
+			"names" :
+			[
+				"Toxic Desert",
+				"Toxic Castle",
+				"Xanadu",
+				"Hangval",
+				"Jalina",
+				"Firios",
+				"Windhaven",
+				"Bathiere",
+				"Spring Falls",
+				"Gem Moor",
+				"Willow",
+				"New Forest",
+				"New Elfwind",
+				"Wenlan",
+				"Vintyl",
+				"Sylina",
+				"Hallin",
+				"Rael"
+			],
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 4,
+				"druid"        : 4,
+				"alchemist"    : 4,
+				"wizard"       : 4,
+				"demoniac"     : 4,
+				"heretic"      : 4,
+				"deathknight"  : 4,
+				"necromancer"  : 4,
+				"warlock"      : 4,
+				"overlord"     : 4,
+				"barbarian"    : 4,
+				"battlemage"   : 4,
+				"beastmaster"  : 4,
+				"witch"        : 4,
+				"planeswalker" : 4,
+				"elementalist" : 4,
+				"slipspacer"   : 5,
+				"councillor"   : 5
+			}
+		}
+	}
+}

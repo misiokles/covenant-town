@@ -1,0 +1,59 @@
+{
+	"bractamus" : 
+	{
+		"class" : "councillor",
+		"female" : true,
+                 "texts" :
+		{
+			"name" : "Bractamus",
+			"biography" : "nothing here",
+			"specialty" : 
+			{
+				"description" : "Hero can cast the Lightning Bolt spell with increased effectiveness.",
+				"tooltip" : "Hero can cast the Lightning Bolt spell with increased effectiveness.",
+				"name" : "Lightning Bolt"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/bractamus/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/bractamus/spec-large.bmp",
+			"large" : "covenant/heroes/bractamus/portrait-large.bmp",
+			"small" : "covenant/heroes/bractamus/portrait-small.bmp"
+		},
+
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"lightningBolt" : {
+						"type": "SPECIAL_SPELL_LEV",
+						"subtype": "spell.lightningBolt",
+						"val": 5
+				}
+			}
+		}
+	}
+}

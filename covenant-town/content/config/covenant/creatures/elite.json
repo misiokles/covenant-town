@@ -1,0 +1,88 @@
+{
+	"cvElite":
+	{
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"name" :
+		{
+			"plural" : "Elites",
+			"singular" : "Elite"
+		},
+		"faction": "covenant",
+		"aiValue" : 1087,
+		"fightValue" : 995,
+		"attack" : 12,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 500
+		},
+		"damage" :
+		{
+			 "min" : 12,
+			 "max" : 18
+		},
+		"speed" : 8,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/elite.def",
+			"map" : "covenant/map/elitemap.def",
+			"iconSmall" : "covenant/iconsSmall/elites.bmp",
+			"iconLarge" : "covenant/iconsBig/elitel.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 3,
+				"attack" : 1,
+				"idle" : 20
+			}
+
+		},
+		"hitPoints" : 50,
+		"growth" : 3,
+		"upgrades":
+		[
+			"cvElite2"
+		],
+        "level" : 5,
+		"sound" :
+		{
+			"attack" : "covenant/eliteatk.wav",
+			"defend" : "covenant/eliteblk.wav",
+			"killed" : "covenant/elitedie.wav",
+			"move"   : "covenant/elitewlk.wav",
+			"wince"  : "covenant/elitehit.wav"
+		},
+		"abilities" : {
+			"enemyDefenceReduction" : 
+			{ 
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			},
+			"generalDamageReduction" :
+			{
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				"val" : 20
+			},
+			"JOUSTING" :
+			{
+				"type" : "JOUSTING"
+			},
+			"generalAttackReduction" :
+			{
+				"type" : "GENERAL_ATTACK_REDUCTION",
+				"val" : 60
+			},
+			"defensiveStance" :
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val" : 60
+			}	
+		}	
+	}
+}
+

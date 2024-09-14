@@ -1,0 +1,64 @@
+{
+	"cvWarDrone":
+	{
+		"name" :
+		{
+			"plural" : "War Drones",
+			"singular" : "War Drone"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "covenant",
+		"aiValue" : 347,
+		"attack" : 11,
+		"hasDoubleWeek" : true,
+        "cost" :
+		{
+			"gold" : 275
+		},
+		"damage" :
+		{
+			 "max" : 7,
+			 "min" : 4
+		},
+		"defense" : 6,
+		"fightValue" : 348,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/maniac.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "covenant/map/maniac.def",
+			"iconSmall" : "covenant/iconsSmall/maniac.bmp",
+			"iconLarge" : "covenant/iconsBig/maniac.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"sound" :
+		{
+			"attack" : "covenant/S202ATTK.wav",
+			"defend" : "covenant/S202DFND.wav",
+			"killed" : "covenant/S202KILL.wav",
+			"move" : "covenant/S202MOVE.wav",
+			"wince" : "covenant/S202WNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+                        },
+			 "poisonous" : {
+				"addInfo" : 0,
+				"subtype" : "spell.poison",
+				"type" : "SPELL_AFTER_ATTACK",
+				"val" : 40
+			}
+		}				
+	}
+}

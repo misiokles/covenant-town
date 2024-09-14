@@ -1,0 +1,51 @@
+{
+	"tarturys" : 
+	{
+		"class" : "slipspacer",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Tarturys",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Resistance skill.",
+				"tooltip" : "Receives a 5% per level bonus to Resistance skill.",
+				"name" : "Resistance"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/tarturys/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/tarturys/spec-large.bmp",
+			"large" : "covenant/heroes/tarturys/portrait-large.bmp",
+			"small" : "covenant/heroes/tarturys/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "resistance"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

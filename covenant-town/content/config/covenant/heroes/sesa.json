@@ -1,0 +1,57 @@
+{
+	"sesa" :
+	{
+		"class" : "councillor",
+		"female" : true,
+                 "texts" :
+		{
+			"name" : "Sesa Refum",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Sorcery skill.",
+				"tooltip" : "Receives a 5% per level bonus to Sorcery skill.",
+				"name" : "Sorcery"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/sesa/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/sesa/spec-large.bmp",
+			"large" : "covenant/heroes/sesa/portrait-large.bmp",
+			"small" : "covenant/heroes/sesa/portrait-small.bmp"
+		},
+
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

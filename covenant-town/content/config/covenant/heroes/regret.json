@@ -1,0 +1,55 @@
+{
+	"regret" :
+	{
+		"class" : "slipspacer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Regret",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Increases kingdom's income by 1 mercury per day",
+				"tooltip" : "Increases kingdom's income by 1 mercury per day",
+				"name" : "+1 Mercury"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "covenant/heroes/regret/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/regret/spec-large.bmp",
+			"large" : "covenant/heroes/regret/portrait-large.bmp",
+			"small" : "covenant/heroes/regret/portrait-small.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"gold" : {
+						"type": "GENERATE_RESOURCE",
+						"subtype": "resource.mercury",
+						"val": 1
+                }
+			}
+		}
+	}
+}

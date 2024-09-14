@@ -1,0 +1,76 @@
+{
+	"cvGrunt2":
+	{
+		"name" :
+		{
+			"plural" : "Grunt Commandos",
+			"singular" : "Grunt Commando"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 20
+		},
+		"faction" : "covenant",
+		"aiValue" : 141,
+		"attack" : 3,
+		"cost" :
+		{
+			"gold" : 50
+		},
+		"damage" :
+		{
+			 "max" : 3,
+			 "min" : 2
+		},
+		"defense" : 7,
+		"fightValue" : 151,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/grunt2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 3 },
+			"map" : "covenant/map/grunt2map.def",
+			"iconSmall" : "covenant/iconsSmall/grunt2s.bmp",
+			"iconLarge" : "covenant/iconsBig/grunt2l.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "covenant/battle/projectile/plasmashot.def",
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0],
+				"attackClimaxFrame" : 8
+			}
+		},
+	
+		"growth" : 15,
+		"hitPoints" : 10,
+		"horde" : 7,
+		"level" : 1,
+		"shots" : 8,		
+		"sound" :
+		{
+			"attack" : "covenant/gruntatk.wav",
+			"defend" : "covenant/gruntblk.wav",
+			"killed" : "covenant/gruntdie.wav",
+			"move"   : "covenant/gruntwlk.wav",
+			"shoot"  : "covenant/gruntshoot.wav",			
+			"wince"  : "covenant/grunthit.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+            "canshoot" :
+			{
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}

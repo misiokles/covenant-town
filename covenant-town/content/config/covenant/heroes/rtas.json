@@ -1,0 +1,59 @@
+{
+	"rtas" : 
+	{
+		"class" : "councillor",
+		"female" : true,
+                 "texts" :
+		{
+			"name" : "Rtas Vadym",
+			"biography" : "nothing here",
+			"specialty" : 
+			{
+				"description" : "Hero can cast the Haste spell with increased effectiveness.",
+				"tooltip" : "Hero can cast the Haste spell with increased effectiveness.",
+				"name" : "Haste"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/rtas/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/rtas/spec-large.bmp",
+			"large" : "covenant/heroes/rtas/portrait-large.bmp",
+			"small" : "covenant/heroes/rtas/portrait-small.bmp"
+		},
+
+		"spellbook" :
+		[
+			"haste"
+		],
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"haste" : {
+						"type": "SPECIAL_SPELL_LEV",
+						"subtype": "spell.haste",
+						"val": 5
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+{
+	"cvGreatHunter":
+	{
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"name" :
+		{
+			"plural" : "Great Hunters",
+			"singular" : "Great Hunter"
+		},
+		"faction": "covenant",
+		"aiValue" : 738,
+		"fightValue" : 691,
+		"attack" : 10,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 10
+		},
+		"speed" : 6,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/Hunter.def",
+			"map" : "covenant/map/Hunter.def",
+			"iconSmall" : "covenant/iconsSmall/Hunter.bmp",
+			"iconLarge" : "covenant/iconsBig/Hunter.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			},
+            "missile" :
+			{
+				"projectile" : "CPRGOGX.def",
+				"attackClimaxFrame" : 1,
+				"offset" :
+				{
+					"upperX" : 40,
+					"upperY" : -50,
+					"middleX" : 50,
+					"middleY" : -50,
+					"lowerX" : 20,
+					"lowerY" : -10
+				},
+				"frameAngles" : [90, 70, 40, 20, 0, -20, -40, -50, -50, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 40,
+		"doubleWide" : true,
+		"growth" : 4,
+		"level" : 4,
+		"shots" : 24,	
+		"sound" :
+		{
+			"attack" : "covenant/eliteatk.wav",
+			"defend" : "covenant/eliteblk.wav",
+			"killed" : "covenant/elitedie.wav",
+			"move"   : "covenant/elitewlk.wav",
+			"wince"  : "covenant/elitehit.wav"
+		},
+		"abilities" :
+		{
+                     "canshoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+		      }
+		}
+	}
+}

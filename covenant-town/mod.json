@@ -1,0 +1,73 @@
+{
+	"name" : "Covenant",
+	"description" : "VCMI Covenant town with new graphics",
+	"author" : "Kegolo, Bungie, Boose, zeryss, acidchalk",
+	"contact" : "http://heroescommunity.com/viewthread.php3?TID=37456",
+	"version" : "1.5.2",
+	"modType" : "Town",
+	"compatibility" :
+	{
+		"min" : "1.5.0"
+	},	
+	"changelog" :
+	{
+		"1.5.2"   : [ "Update to vcmi-1.5 format" ]
+	},
+	"factions" :
+	[
+		"config/covenant/town/buildings.json",
+		"config/covenant/town/faction.json",
+		"config/covenant/town/siege.json",
+		"config/covenant/town/spells.json",
+		"config/covenant/town/structures.json",
+		"config/covenant/town/puzzle.json"
+
+	],
+	"creatures" :
+	[
+		"config/covenant/creatures/grunt.json",
+		"config/covenant/creatures/grunt2.json",
+        "config/covenant/creatures/Jackal.json",
+		"config/covenant/creatures/JackalMajor.json",
+		"config/covenant/creatures/Drone.json",
+		"config/covenant/creatures/WarDrone.json",
+        "config/covenant/creatures/Hunter.json",
+		"config/covenant/creatures/GreatHunter.json",
+		"config/covenant/creatures/Elite.json",
+		"config/covenant/creatures/Elite2.json",
+		"config/covenant/creatures/Elite3.json",		
+		"config/covenant/creatures/Mehamorf.json",
+		"config/covenant/creatures/MehamorfWarrior.json",
+		"config/covenant/creatures/Helion.json",
+		"config/covenant/creatures/HeavyHelion.json",
+		"config/covenant/creatures/SiegesHelions.json",
+        "config/covenant/creatures/Briteres.json",
+        "config/covenant/creatures/Sultar.json"
+		
+	],
+	"heroClasses" :
+	[
+		 "config/covenant/classes/slipspacer.json",
+		 "config/covenant/classes/councillor.json"
+	],
+
+	"heroes" :
+	[
+        "config/covenant/heroes/vadam.json",
+		"config/covenant/heroes/Fal.json",
+		"config/covenant/heroes/tarturys.json",
+		"config/covenant/heroes/bractamus.json",
+		"config/covenant/heroes/vergil.json",
+		"config/covenant/heroes/paradun.json",
+		"config/covenant/heroes/sesa.json",
+		"config/covenant/heroes/rtas.json",
+        "config/covenant/heroes/ripa.json",
+        "config/covenant/heroes/ceretys.json",
+		"config/covenant/heroes/reth.json",
+		"config/covenant/heroes/hopalong.json",
+		"config/covenant/heroes/regret.json",
+		"config/covenant/heroes/yayal.json",
+		"config/covenant/heroes/arbiter.json"
+	],
+	"objects" : [ "config/covenant/dwellings" ]
+}

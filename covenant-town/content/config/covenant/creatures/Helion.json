@@ -1,0 +1,61 @@
+{
+	"cvHelion" : {
+		"abilities" : {
+			"EARTH_IMMUNITY"	:
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "earth"
+			},
+			 "airShield":
+			{
+				"type":"GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val" :40
+			},
+			"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+			"directDamageImmunity" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 100
+			},		
+			"nonliving":
+			{	
+				"type" : "NON_LIVING"
+			}
+		},
+		"advMapAmount" : {"max" : 10, "min" : 4},
+		"aiValue" : 6147,
+		"attack" : 26,
+		"cost" : { "gold" : 2000, "mercury" : 1 },
+		"damage" : {"max" : 40, "min" : 30},
+		"defense" : 30,
+		"faction" : "covenant",
+		"fightValue" : 4950,
+		"graphics" : {
+			"animation" : "covenant/battle/CR209.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 4, "walk" : 1.30 },
+			"map" : "covenant/map/7aa.def",
+			"iconSmall" : "covenant/iconsSmall/CPrS209F.bmp",
+			"iconLarge" : "covenant/iconsBig/CPrL209B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 1,
+		"hitPoints" : 180,
+        "doubleWide" : true,
+		"level" : 7,
+		"name" : { "plural" : "Helions", "singular" : "Helion" },
+		"sound" : {
+			"attack" : "covenant/atak-low.wav",
+			"defend" : "covenant/defend-low.wav",
+			"killed" : "covenant/kill-low.wav",
+			"move" : "covenant/move-low.wav",
+			"wince" : "covenant/wince-low.wav"
+		},
+		"speed" : 8,
+		"upgrades" : [ "cvHeavyHelion" ]
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"cvDrone":
+	{
+		"name" :
+		{
+			"plural" : "Drones",
+			"singular" : "Drone"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "covenant",
+		"aiValue" : 347,
+		"attack" : 9,
+		"hasDoubleWeek" : true,
+        "cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 7,
+			 "min" : 4
+		},
+		"defense" : 6,
+		"fightValue" : 348,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/pyro.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "covenant/map/pyro.def",
+			"iconSmall" : "covenant/iconsSmall/pyro.bmp",
+			"iconLarge" : "covenant/iconsBig/pyro.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"upgrades":
+		[
+			"cvWarDrone"
+		],
+		"sound" :
+		{
+			"attack" : "covenant/S201ATTK.wav",
+			"defend" : "covenant/S201DFND.wav",
+			"killed" : "covenant/S201KILL.wav",
+			"move" : "covenant/S201MOVE.wav",
+			"wince" : "covenant/S201WNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+            },
+			 "poisonous" : {
+				"addInfo" : [0, 2],
+				"subtype" : "spell.poison",
+				"type" : "SPELL_AFTER_ATTACK",
+				"val" : 20
+			}
+		}				
+	}
+}

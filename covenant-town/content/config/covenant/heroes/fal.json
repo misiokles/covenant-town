@@ -1,0 +1,43 @@
+{
+	"fal" :
+	{
+		"class" : "slipspacer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Fal Chavum",
+			"biography" : "nothing here",
+			"specialty" :
+			{
+				"description" : "Starts with Advanced Leadership.",
+				"tooltip" : "Starts with Advanced Leadership.",
+				"name" : "Leadership"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/fal/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/fal/spec-large.bmp",
+			"large" : "covenant/heroes/fal/portrait-large.bmp",
+			"small" : "covenant/heroes/fal/portrait-small.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty": {}
+	}
+}

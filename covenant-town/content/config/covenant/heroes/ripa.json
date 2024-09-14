@@ -1,0 +1,55 @@
+{
+	"ripa" :
+	{
+		"class" : "slipspacer",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Ripa Moran",
+			"biography" : "nothing here.",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Armorer skill.",
+				"tooltip" : "Receives a 5% per level bonus to Armorer skill.",
+				"name" : "Armorer"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/ripa/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/ripa/spec-large.bmp",
+			"large" : "covenant/heroes/ripa/portrait-large.bmp",
+			"small" : "covenant/heroes/ripa/portrait-small.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"cvMehamorf":
+	{
+		"name" :
+		{
+			"plural" : "Mehamorfs",
+			"singular" : "Mehamorf"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "covenant",
+		"aiValue" : 1747,
+		"attack" : 14,
+		"cost" :
+		{
+			"gold" : 900
+			
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 18
+		},
+		"defense" : 12,
+		"fightValue" : 1492,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/Mecha.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "covenant/map/Mecha.def",
+			"iconSmall" : "covenant/iconsSmall/Mecha.bmp",
+			"iconLarge" : "covenant/iconsBig/Mecha.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"doubleWide" : true,
+		"growth" : 2,
+		"hitPoints" : 100,
+		"level" : 6,
+		"upgrades":
+		[
+			"cvMehamorfWarrior"
+		],
+		"sound" :
+		{
+			"attack" : "covenant/S209ATTK.wav",
+			"defend" : "covenant/S209DFND.wav",
+			"killed" : "covenant/S209KILL.wav",
+			"move" : "covenant/S209MOVE.wav",
+			"wince" : "covenant/S209WNCE.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+        "nonliving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+		"ImmunityToFire" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "fire",
+				"val" : 100
+			},
+		"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+			"enemyDefenceReduction" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 25
+			}
+		}
+	}
+}

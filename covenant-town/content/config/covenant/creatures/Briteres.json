@@ -1,0 +1,87 @@
+{
+	"cvBriteres":
+	{
+		"name" :
+		{
+			"plural" : "Britereses",
+			"singular" : "Briteres"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "covenant",
+		"aiValue" : 2250,
+		"attack" : 14,
+		"hasDoubleWeek" : true,
+        "cost" : 
+		{
+			"gold" : 800
+		},
+		"damage" :
+		{
+			"max" : 25,
+			"min" : 15
+		},
+		"defense" : 16,
+		"fightValue" : 1800,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/Briteres.def",
+			"map" : "covenant/map/Briteres.def",
+			"iconSmall" : "covenant/iconsSmall/Briteres.bmp",
+			"iconLarge" : "covenant/iconsBig/Briteres.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			}
+
+		},
+		"hitPoints" : 100,
+		"doubleWide" : true,
+		"growth" : 3,
+        "level" : 6,
+		"sound" :
+		{
+			"attack" : "covenant/eliteatk.wav",
+			"defend" : "covenant/eliteblk.wav",
+			"killed" : "covenant/elitedie.wav",
+			"move"   : "covenant/elitewlk.wav",
+			"wince"  : "covenant/elitehit.wav"
+		},
+		"abilities" : {
+			"enemyDefenceReduction" : 
+			{ 
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 30
+			},
+			"generalDamageReduction" :
+			{
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				"val" : 30
+			},
+			"fear" :
+			{
+				"type" : "FEAR"
+			},
+			"mindImmunity":
+			{
+				"type" : "MIND_IMMUNITY"	
+			},
+			"noRetaliation":
+			{
+				"type" : "BLOCKS_RETALIATION"	
+			},
+			"fearless":
+			{
+				"type" : "FEARLESS"	
+			}
+		}
+	}
+}
+

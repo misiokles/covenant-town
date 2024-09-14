@@ -1,0 +1,58 @@
+{
+	"vergil" : 
+	{
+		"class" : "councillor",
+		"female" : true,
+                 "texts" :
+		{
+			"name" : "Vergil",
+			"biography" : "nothing here",
+			"specialty" : 
+			{
+				"description" : "Hero can cast the Water Walk spell with increased effectiveness.",
+				"tooltip" : "Hero can cast the Water Walk spell with increased effectiveness.",
+				"name" : "Water Walk"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "covenant/heroes/vergil/spec-small.bmp",
+			"specialtyLarge" : "covenant/heroes/vergil/spec-large.bmp",
+			"large" : "covenant/heroes/vergil/portrait-large.bmp",
+			"small" : "covenant/heroes/vergil/portrait-small.bmp"
+		},
+
+		"spellbook" :
+		[
+			"waterWalk"
+		],
+		"army" :
+		[
+			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
+			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"waterWalk" : {
+						"type": "SPECIAL_SPELL_LEV",
+						"subtype": "spell.waterWalk",
+						"val": 5
+				}
+			}
+		}
+	}
+}
