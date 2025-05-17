@@ -5,13 +5,13 @@
 		"female" : false,
 		"texts" :
 		{
-			"name" : "Yayal",
-			"biography" : "nothing here",
+			"name" : "幺幺",
+			"biography" : "我杀了恶魔！没有？我去试试！好极了！我得到了咕噜人的帮助。我们去厮杀了！好极了！我倒挺聪明。我让朋友们去厮杀，我告诉精英我做到了。我还活着。好极了！朋友死了。好极了！我显然不够朋友。他们死了。我是个糟糕的朋友。好极了！",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to luck skill.",
-				"tooltip" : "Starts with Advanced Luck.",
-				"name" : "Luck"
+				"description" : "达到1级以后提高野猪兽或重装野猪兽的攻击力与防御力。",
+				"tooltip" : "生物强化：野猪兽",
+				"name" : "野猪兽"
 			}
 		},
 		"images" :
@@ -23,18 +23,25 @@
 		},
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
-			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
-			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25}
 		],
 		"skills" :
 		[
 			{
-				"level" : "advanced",
-				"skill" : "luck"
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
 			}
 		],
 		
-		"specialty": {}
+		"specialty":
+		{
+			"creature" : "cvGrunt"
+		}
 	}
 }

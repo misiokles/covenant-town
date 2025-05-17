@@ -1,18 +1,18 @@
 {
 	"regret" :
 	{
-		"class" : "slipspacer",
+		"class" : "councillor",
 		"female" : false,
 
 		"texts" :
 		{
-			"name" : "Regret",
-			"biography" : "nothing here",
+			"name" : "悲怆先知",
+			"biography" : "悲怆先知是星盟三名高级先知中最年轻的一位。斯巴达战士艾弗里·约翰逊二世曾经接收到他发给地球的信息：“亲爱的人类，我们后悔成为外星混蛋，我们后悔来到地球，我们非常遗憾，你们的军团刚刚击毁了我们的强盗舰队”。",
 			"specialty" :
 			{
-				"description" : "Increases kingdom's income by 1 mercury per day",
-				"tooltip" : "Increases kingdom's income by 1 mercury per day",
-				"name" : "+1 Mercury"
+				"description" : "使用护体神盾魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "魔法增强：护体神盾",
+				"name" : "护体神盾"
 			}
 		},
 		"images" :
@@ -23,9 +23,14 @@
 			"large" : "covenant/heroes/regret/portrait-large.bmp",
 			"small" : "covenant/heroes/regret/portrait-small.bmp"
 		},
+
+		"spellbook" :
+		[
+			"shield"
+		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -34,21 +39,23 @@
 		[
 			{
 				"level" : "basic",
-				"skill" : "logistics"
+				"skill" : "wisdom"
 			},
 			{
 				"level" : "basic",
-				"skill" : "leadership"
+				"skill" : "earthMagic"
 			}
 		],
 		
-		"specialty": {
-			"bonuses": {
-				"gold" : {
-						"type": "GENERATE_RESOURCE",
-						"subtype": "resource.mercury",
-						"val": 1
-                }
+		"specialty": //estate bonus
+{
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.shield",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
 			}
 		}
 	}

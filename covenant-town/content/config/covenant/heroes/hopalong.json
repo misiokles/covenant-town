@@ -1,17 +1,17 @@
 {
 	"hopalong" : 
 	{
-		"class" : "slipspacer",
+		"class" : "councillor",
 		"female" : false,
 		"texts" :
 		{
-			"name" : "Hopalong",
-			"biography" : "nothing here",
+			"name" : "哈布朗",
+			"biography" : "哈布朗不仅是全星盟最好的克尔维特飞行员，而且也是唯一一位受到各个种族尊敬的兵蜂战士。在同类型的传奇人物中，哈布朗击落了37架UNSC巡洋舰，没有一个敌人能从被他击落的战舰上逃脱。他更著名的事迹是驾驶战列巡洋舰进行光速飞行的技术比AI更高超。",
 			"specialty" :
 			{
-				"description" : "Increases Speed of any Drones and War Drones by 1 and their Attack and Defense skills by 5% for every 3 level (rounded up).",
-				"tooltip" : "Increases Speed of any Drones and War Drones by 1 and their Attack and Defense skills by 5% for every 3 level (rounded up).",
-				"name" : "Drones"
+				"description" : "达到3级以后提高异虫或雄蜂的攻击力与防御力。",
+				"tooltip" : "生物强化：异虫",
+				"name" : "异虫"
 			}
 		
 		},
@@ -22,22 +22,26 @@
 			"large" : "covenant/heroes/hopalong/portrait-large.bmp",
 			"small" : "covenant/heroes/hopalong/portrait-small.bmp"
 		},
+		"spellbook" :
+		[
+			"haste"
+		],
 		"army" :
 		[
 			{
-				"creature" : "cvDrone",
-				"max" : 6,
-				"min" : 2
+				"creature" : "cvGrunt",
+				"max" : 25,
+				"min" : 15
 			},
 			{
 				"creature" : "cvDrone",
 				"max" : 6,
-				"min" : 2
+				"min" : 4
 			},
 			{
 				"creature" : "cvDrone",
 				"max" : 6,
-				"min" : 2
+				"min" : 4
 			}
 		],
 
@@ -49,7 +53,7 @@
 			},
 			{
 				"level" : "basic",
-				"skill" : "airMagic"
+				"skill" : "tactics"
 			}
 		],
 		

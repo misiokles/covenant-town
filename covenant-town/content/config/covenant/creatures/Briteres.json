@@ -3,48 +3,51 @@
 	{
 		"name" :
 		{
-			"plural" : "Britereses",
-			"singular" : "Briteres"
+			"plural" : "巨像",
+			"singular" : "巨像"
 		},
 		"advMapAmount" :
 		{
-			"max" : 12,
-			"min" : 8
+			 "max" : 12,
+			 "min" : 5
 		},
 		"faction" : "covenant",
-		"aiValue" : 2250,
+		"aiValue" : 1747,
 		"attack" : 14,
-		"hasDoubleWeek" : true,
-        "cost" : 
+		"cost" :
 		{
-			"gold" : 800
+			"gold" : 900
 		},
 		"damage" :
 		{
-			"max" : 25,
-			"min" : 15
+			 "max" : 20,
+			 "min" : 18
 		},
-		"defense" : 16,
-		"fightValue" : 1800,
+		"defense" : 12,
+		"fightValue" : 1492,
 		"graphics" :
 		{
-			"animation" : "covenant/battle/Briteres.def",
-			"map" : "covenant/map/Briteres.def",
-			"iconSmall" : "covenant/iconsSmall/Briteres.bmp",
-			"iconLarge" : "covenant/iconsBig/Briteres.bmp",
+			"animation" : "covenant/battle/elite3.def",
+			"map" : "covenant/map/elite3map.def",
+			"iconSmall" : "covenant/iconsSmall/elite3s.bmp",
+			"iconLarge" : "covenant/iconsBig/elite3l.bmp",
 			"timeBetweenFidgets" : 1,
 			"animationTime" :
 			{
-				"walk" : 1.30,
+				"walk" : 1,
 				"attack" : 1,
 				"idle" : 10
 			}
 
 		},
-		"hitPoints" : 100,
 		"doubleWide" : true,
-		"growth" : 3,
-        "level" : 6,
+		"growth" : 2,
+		"hitPoints" : 100,
+		"level" : 6,
+		"upgrades":
+		[
+			"cvElite3"
+		],
 		"sound" :
 		{
 			"attack" : "covenant/eliteatk.wav",
@@ -53,35 +56,74 @@
 			"move"   : "covenant/elitewlk.wav",
 			"wince"  : "covenant/elitehit.wav"
 		},
+		"speed" : 5,
 		"abilities" : {
-			"enemyDefenceReduction" : 
-			{ 
+			"nonliving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"ImmunityToFire" :
+			{
+				"subtype" : "fire",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"KING2":
+			{
+				"type" : "KING",
+				"val" : 2
+			},
+			"enemyDefenceReduction" :
+			{
 				"type" : "ENEMY_DEFENCE_REDUCTION",
-				"val" : 30
-			},
-			"generalDamageReduction" :
+				"val" : 25
+			}	
+		},
+		"stackExperience" :
+		[
 			{
-				"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeMelee",
-				"val" : 30
-			},
-			"fear" :
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
 			{
-				"type" : "FEAR"
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
 			},
-			"mindImmunity":
 			{
-				"type" : "MIND_IMMUNITY"	
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
 			},
-			"noRetaliation":
 			{
-				"type" : "BLOCKS_RETALIATION"	
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
 			},
-			"fearless":
 			{
-				"type" : "FEARLESS"	
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			}
-		}
+		]	
 	}
 }
 

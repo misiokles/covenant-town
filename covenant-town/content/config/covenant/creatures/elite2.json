@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Elite Officers",
-			"singular" : "Elite Officer"
+			"plural" : "精英剑士",
+			"singular" : "精英剑士"
 		},
 		"advMapAmount" :
 		{
@@ -13,18 +13,18 @@
 		},
 		"faction" : "covenant",
 		"aiValue" : 1207,
-		"attack" : 14,
+		"attack" : 15,
 		"hasDoubleWeek" : true,
         "cost" : 
 		{
-			"gold" : 600
+			"gold" : 575
 		},
 		"damage" :
 		{
-			 "max" : 22,
-			 "min" : 15
+			 "max" : 20,
+			 "min" : 12
 		},
-		"defense" : 10,
+		"defense" : 15,
 		"fightValue" : 1105,
 		"speed" : 8,
 		"graphics" :
@@ -36,50 +36,96 @@
 			"timeBetweenFidgets" : 1,
 			"animationTime" :
 			{
-				"walk" : 3,
+				"walk" : 1.3,
 				"attack" : 1,
-				"idle" : 20
+				"idle" : 10
 			}
 
 		},
 		"hitPoints" : 50,
+		"doubleWide" : true,
 		"growth" : 3,
                 "level" : 5,
 		"sound" :
 		{
-			"attack" : "covenant/eliteatk.wav",
-			"defend" : "covenant/eliteblk.wav",
-			"killed" : "covenant/elitedie.wav",
-			"move"   : "covenant/elitewlk.wav",
-			"wince"  : "covenant/elitehit.wav"
+			"attack" : "covenant/S206ATTK.wav",
+			"defend": "covenant/S206DFND.wav",
+			"killed": "covenant/S206KILL.wav",
+			"move": "covenant/S206MOVE.wav",
+			"wince": "covenant/S206WNCE.wav"
 		},
 		"abilities" : {
-			"enemyDefenceReduction" : 
-			{ 
-				"type" : "ENEMY_DEFENCE_REDUCTION",
-				"val" : 30
-			},
-			"generalDamageReduction" :
+			"extraAttack" :
 			{
-				"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeMelee",
-				"val" : 30
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
 			},
-			"JOUSTING" :
+			"Healer":
 			{
-				"type" : "JOUSTING"
-			},
-			"generalAttackReduction" :
-			{
-				"type" : "GENERAL_ATTACK_REDUCTION",
-				"val" : 80
-			},
-			"defensiveStance" :
-			{
-				"type" : "DEFENSIVE_STANCE",
-				"val" : 80
+				"type" : "HEALER",
+				"subtype" : "spell.cure"
 			}	
-		}	
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]	
 	}
 }
 

@@ -1,13 +1,13 @@
 {
 	"covenant" : {
 		"alignment" : "evil",
+		"boat" : "boatNecropolis",
 		"creatureBackground" : { "120px" : "covenant/creature-bg-120px", "130px" : "covenant/creature-bg-130px" },
-		"name" : "Covenant",
+		"name" : "星盟",
 		"nativeTerrain" : "rough",
-		"boat" : "boatCastle",
 		"town" :
 		{
-			"musicTheme" : "music/covenant/theme",
+			"musicTheme" : ["music/covenant/theme"],
 			"defaultTavern" : 5,
 			"tavernVideo" : "TAVERN.BIK",
 			"guildBackground" : "TPMAGE.bmp",
@@ -32,11 +32,10 @@
 				[ "cvMehamorf", "cvMehamorfWarrior"],
 				[ "cvHelion", "cvHeavyHelion" ]
 			],
-			"moatAbility" : "castleMoat",
+			"moatAbility":"covenantMoat",
 			"horde" : [ 1 , -1],
 			"mageGuild" : 5,
 			"primaryResource" : "mercury",
-			"warMachine" : "ballista",
 			"buildingsIcons" : "covenant/town-hall.def",
 			"icons" :
 			{
@@ -78,24 +77,24 @@
 			},
 			"names" :
 			[
-				"Toxic Desert",
-				"Toxic Castle",
-				"Xanadu",
-				"Hangval",
-				"Jalina",
-				"Firios",
-				"Windhaven",
-				"Bathiere",
-				"Spring Falls",
-				"Gem Moor",
-				"Willow",
-				"New Forest",
-				"New Elfwind",
-				"Wenlan",
-				"Vintyl",
-				"Sylina",
-				"Hallin",
-				"Rael"
+				"铊硒漠",
+				"铊硒堡",
+				"仙拿度",
+				"杭瓦尔",
+				"伽林那",
+				"菲廖斯",
+				"避风港",
+				"巴舍尔",
+				"临春城",
+				"珍宝沼",
+				"威罗城",
+				"新森城",
+				"纽埃芬",
+				"温岚城",
+				"温提尔",
+				"西林那",
+				"哈林城",
+				"雷伊尔"
 			],
 			"tavern" :
 			{

@@ -1,7 +1,7 @@
 {
 	"councillor" :
 	{
-		"name" : "Councillor",
+		"name" : "星环议员",
 		"commander" : "cvSultar",
 		"animation" : { "battle" : { "female" : "covenant/heroes/battlemagic", "male" : "covenant/heroes/battlemagic" } },
 		
@@ -17,9 +17,9 @@
 		"primarySkills" :
 		{
 			"attack"     : 0,
-			"defence"    : 1,
+			"defence"    : 0,
 			"spellpower" : 2,
-			"knowledge"  : 2
+			"knowledge"  : 3
 		},
 		"lowLevelChance" :
 		{

@@ -1,0 +1,165 @@
+{
+	"cvBruteChieftains":
+	{
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"name" :
+		{
+			"plural" : "鬼面兽首领",
+			"singular" : "鬼面兽首领"
+		},
+		"faction": "covenant",
+		"aiValue" : 808,
+		"fightValue" : 791,
+		"attack" : 12,
+		"defense" : 8,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			 "min" : 6,
+			 "max" : 8
+		},
+		"speed" : 10,
+		"graphics" :
+		{
+			"animation" : "covenant/battle/Chief.def",
+			"map" : "covenant/map/Chief.def",
+			"iconSmall" : "covenant/iconsSmall/Chief.bmp",
+			"iconLarge" : "covenant/iconsBig/Chief.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			},
+            "missile" :
+			{
+				"projectile" : "covenant/battle/projectile/shot204.def",
+				"attackClimaxFrame" : 1,
+				"offset" :
+				{
+					"upperX" : 40,
+					"upperY" : -50,
+					"middleX" : 50,
+					"middleY" : -50,
+					"lowerX" : 20,
+					"lowerY" : -10
+				},
+				"frameAngles" : [90, 70, 40, 20, 0, -20, -40, -50, -50, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 35,
+		"doubleWide" : false,
+		"growth" : 5,
+		"level" : 4,
+		"shots" : 8,
+		"sound" :
+		{
+			"attack" : "covenant/S204ATTK.wav",
+			"defend" : "covenant/S204DFND.wav",
+			"killed" : "covenant/S204KILL.wav",
+			"move" : "covenant/S204MOVE.wav",
+			"shoot": "covenant/S204dfnd.wav",
+			"wince" : "covenant/S204WNCE.wav"
+		},
+		"abilities" :
+		{
+                     "canshoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+		      },
+			 "shootsAllAdjacent" : 
+			{
+				"type" : "SHOOTS_ALL_ADJACENT"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 1, 2, 2, 2, 3, 3, 3, 4]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "EARTH_IMMUNITY",
+				"subtype":1
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY", 
+					"subtype" : 62 //"spell.blind", 
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 ]			
+			}
+		]
+	}
+}

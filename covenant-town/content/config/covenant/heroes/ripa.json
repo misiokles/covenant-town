@@ -1,17 +1,17 @@
 {
 	"ripa" :
 	{
-		"class" : "slipspacer",
+		"class" : "councillor",
 		"female" : false,
 		"texts" :
 		{
-			"name" : "Ripa Moran",
-			"biography" : "nothing here.",
+			"name" : "瑞帕摩兰",
+			"biography" : "瑞帕摩兰在收获运动和其他外殖民地运动期间是桑赫里盟军的指挥官，直到他在2531年的死亡。在领导政变反对他的氏族并且在决心之地战败以后，作为惩罚，他被任命为胜利之路的第十七位仲裁者，主要是在悲怆先知的监督和敦促下活动。",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Armorer skill.",
-				"tooltip" : "Receives a 5% per level bonus to Armorer skill.",
-				"name" : "Armorer"
+				"description" : "在鹰眼术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：鹰眼术",
+				"name" : "鹰眼术"
 			}
 		},
 		"images" :
@@ -23,7 +23,7 @@
 		},
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -31,23 +31,23 @@
 		"skills" : [
 			{
 				"level" : "basic",
-				"skill" : "armorer"
+				"skill" : "wisdom"
 			},
 			{
 				"level" : "basic",
-				"skill" : "tactics"
+				"skill" : "eagleEye"
 			}
 		],
 		
-		"specialty" : {
+		"specialty": //defense bonus
+		{
 			"bonuses" : {
-				"armorer" : {
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
-					"targetSourceType" : "SECONDARY_SKILL",
+				"eagleEye" : {
+					"type" : "LEARN_BATTLE_SPELL_CHANCE",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 5,
-					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
 				}
 			}
 		}

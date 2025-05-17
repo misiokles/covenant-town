@@ -2,16 +2,16 @@
 	"bractamus" : 
 	{
 		"class" : "councillor",
-		"female" : true,
+		"female" : false,
                  "texts" :
 		{
-			"name" : "Bractamus",
-			"biography" : "nothing here",
+			"name" : "布拉克塔努",
+			"biography" : "鬼面兽一族拥有两个不同的人格：类人猿和文明人。布拉克塔努是类人猿，这事实从未变过。他在战斗中总是把自己的队友无情的丢在前方掩护，只是为了让他自己杀死更多的敌人。他不止一次因为不加区分杀死敌人和朋友而被捕入狱。",
 			"specialty" : 
 			{
-				"description" : "Hero can cast the Lightning Bolt spell with increased effectiveness.",
-				"tooltip" : "Hero can cast the Lightning Bolt spell with increased effectiveness.",
-				"name" : "Lightning Bolt"
+				"description" : "使用孤注一掷魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "魔法增强：孤注一掷",
+				"name" : "孤注一掷"
 			}
 		},
 
@@ -25,11 +25,11 @@
 
 		"spellbook" :
 		[
-			"lightningBolt"
+			"frenzy"
 		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -42,16 +42,18 @@
 			},
 			{
 				"level" : "basic",
-				"skill" : "waterMagic"
+				"skill" : "fireMagic"
 			}
 		],
 		
-		"specialty": {
-			"bonuses": {
-				"lightningBolt" : {
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.lightningBolt",
-						"val": 5
+		"specialty":
+		{
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.frenzy",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
 				}
 			}
 		}

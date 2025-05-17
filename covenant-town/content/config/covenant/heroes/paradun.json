@@ -6,13 +6,13 @@
 
 		"texts" :
 		{
-			"name" : "Paradun",
-			"biography" : "nothing here.",
+			"name" : "帕拉班",
+			"biography" : "帕拉班的事业开始于在星盟空域一台无人认领的克尔维特级钻井平台上担任等离子电工，他在致远星附近一个废弃的人类矿场偶然发现了水运系统的残骸。从那时起，他就拥有了这项技术的专利，并以一名鬼面兽发明家的不寻常身份加入星盟的行列。",
 			"specialty" :
 			{
-				"description" : "Hero can cast the Shield spell with increased effectiveness.",
-				"tooltip" : "Hero can cast the Shield spell with increased effectiveness.",
-				"name" : "Shield"
+				"description" : "使用凌波微步魔法时效果大增。",
+				"tooltip" : "魔法增强：凌波微步",
+				"name" : "凌波微步"
 			}
 		},
 		
@@ -26,11 +26,11 @@
 
 		"spellbook" :
 		[
-			"shield"
+			"waterWalk"
 		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -38,20 +38,22 @@
 		[
 			{
 				"level" : "basic",
-				"skill" : "earthMagic"
+				"skill" : "wisdom"
 			},
 			{
 				"level" : "basic",
-				"skill" : "pathfinding"
+				"skill" : "waterMagic"
 			}
 		],
 		
-		"specialty": {
-			"bonuses": {
-				"shield" : {
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.shield",
-						"val": 5
+		"specialty":
+		{
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.waterWalk",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
 				}
 			}
 		}

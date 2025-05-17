@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Grunt Commandos",
-			"singular" : "Grunt Commando"
+			"plural" : "重装野猪兽",
+			"singular" : "重装野猪兽"
 		},
 		"advMapAmount" :
 		{
@@ -13,22 +13,22 @@
 		},
 		"faction" : "covenant",
 		"aiValue" : 141,
-		"attack" : 3,
+		"attack" : 2,
 		"cost" :
 		{
 			"gold" : 50
 		},
 		"damage" :
 		{
-			 "max" : 3,
-			 "min" : 2
+			 "max" : 2,
+			 "min" : 1
 		},
-		"defense" : 7,
+		"defense" : 3,
 		"fightValue" : 151,
 		"graphics" :
 		{
 			"animation" : "covenant/battle/grunt2.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 3 },
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1.3 },
 			"map" : "covenant/map/grunt2map.def",
 			"iconSmall" : "covenant/iconsSmall/grunt2s.bmp",
 			"iconLarge" : "covenant/iconsBig/grunt2l.bmp",
@@ -47,30 +47,100 @@
 				},
 				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0],
 				"attackClimaxFrame" : 8
-			}
+			},
 		},
 	
-		"growth" : 15,
-		"hitPoints" : 10,
+		"growth" : 20,
+		"hitPoints" : 5,
 		"horde" : 7,
 		"level" : 1,
-		"shots" : 8,		
+//		"shots" : 8,		
 		"sound" :
 		{
-			"attack" : "covenant/gruntatk.wav",
-			"defend" : "covenant/gruntblk.wav",
-			"killed" : "covenant/gruntdie.wav",
-			"move"   : "covenant/gruntwlk.wav",
-			"shoot"  : "covenant/gruntshoot.wav",			
-			"wince"  : "covenant/grunthit.wav"
+			"attack" : "covenant/S198ATTK.wav",
+			"defend": "covenant/S198DFND.wav",
+			"killed": "covenant/S198KILL.wav",
+			"move": "covenant/S198MOVE.wav",
+			"wince": "covenant/S198WNCE.wav"
 		},
-		"speed" : 6,
+		"speed" : 8,
 		"abilities" :
-		{
-            "canshoot" :
+		{},
+		"stackExperience" :
+ 
+		[
 			{
-				"type" : "SHOOTER"
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin", //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged", //shield effect
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
 			}
-		}
+		]
 	}
 }

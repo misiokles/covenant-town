@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Jackal Majors",
-			"singular" : "Jackal Major"
+			"plural" : "豺狼队长",
+			"singular" : "豺狼队长"
 		},
 		"advMapAmount" :
 		{
@@ -12,25 +12,25 @@
 			 "min" : 16
 		},
 		"faction" : "covenant",
-		"aiValue" : 179,
+		"aiValue" : 219,
 		"attack" : 7,
 		"hasDoubleWeek" : true,
          "cost" :
 		{
-			"gold" : 160
+			"gold" : 150
 		},
 		"damage" :
 		{
-			 "max" : 5,
+			 "max" : 4,
 			 "min" : 2
 		},
-		"defense" : 6,
-		"fightValue" : 189,
+		"defense" : 7,
+		"fightValue" : 229,
 		"horde" : 6,
 		"graphics" :
 		{
 			"animation" : "covenant/battle/CR198.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
 			"map" : "covenant/map/footsoldier.def",
 			"iconSmall" : "covenant/iconsSmall/CPrS198F.bmp",
 			"iconLarge" : "covenant/iconsBig/CPrL198B.bmp",
@@ -52,18 +52,17 @@
 			}
 		},
 
-		"growth" : 9,
-		"hitPoints" : 12,
+		"growth" : 8,
+		"hitPoints" : 20,
           "level" : 2,
-		"shots" : 12,
+//		"shots" : 12,
 		"sound" :
 		{
-			"attack" : "covenant/S198ATTK.wav",
-			"defend" : "covenant/S198DFND.wav",
-			"killed" : "covenant/S198KILL.wav",
-			"move"   : "covenant/S198MOVE.wav",
-			"wince"  : "covenant/S198WNCE.wav",
-                         "shoot" : "covenant/S198SHOT.wav"
+			"attack" : "covenant/S200ATTK.wav",
+			"defend": "covenant/S200DFND.wav",
+			"killed": "covenant/S200KILL.wav",
+			"move": "covenant/S200MOVE.wav",
+			"wince": "covenant/S200WNCE.wav"
 		},
 		"speed" : 5,
 		"abilities" :
@@ -80,6 +79,89 @@
 				"subtype": "damageTypeRanged",
 				"val" : 20
 			}	
-		}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 1, 2, 3, 4, 6, 8, 10, 12, 14, 16]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged", //shield effect
+				},
+				"values" : [ 1, 2, 3, 4, 6, 8, 10, 12, 14, 16]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			}
+		]
 	}
 }

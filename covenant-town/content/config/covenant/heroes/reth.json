@@ -2,16 +2,16 @@
 	"reth" : 
 	{
 		"class" : "slipspacer",
-		"female" : true,
+		"female" : false,
 		"texts" :
 		{
-			"name" : "Reth",
-			"biography" : "nothing here.", 
+			"name" : "雷斯",
+			"biography" : "在“星盟异端起义”期间，当他用一把等离子手枪击落人类的鹈鹕运输机时，雷斯给仲裁者留下了深刻的印象。他被分配了自己的军队，其中包括精英战士和猎人，这导致了一场动荡，直到他艰难地赢得了猎人米杰柯罗的双重挑衅。从此他的领导地位不再受到质疑。", 
 			"specialty" :
 			{
-				"description" : "Increases Speed of any Jackals and Jackal Majors by 1 and their Attack and Defense skills by 5% for every 2 levels (rounded up).",
-				"tooltip" : "Increases Speed of any Jackals and Jackal Majors by 1 and their Attack and Defense skills by 5% for every 2 levels (rounded up).",
-				"name" : "Jackals"
+				"description" : "达到2级以后提高豺狼步兵或豺狼队长的攻击力与防御力。",
+				"tooltip" : "生物强化：豺狼步兵",
+				"name" : "豺狼步兵"
 			}
 		},
 		"images" :
@@ -43,12 +43,8 @@
 		"skills" :
 		[
 			{
-				"level" : "basic",
-				"skill" : "wisdom"
-			},
-			{
-				"level" : "basic",
-				"skill" : "sorcery"
+				"level" : "advanced",
+				"skill" : "tactics"
 			}
 		],
 		

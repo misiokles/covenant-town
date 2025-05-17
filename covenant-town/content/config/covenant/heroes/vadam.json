@@ -6,13 +6,13 @@
 
 		"texts" :
 		{
-			"name" : "Vadam",
-			"biography" : "nothing here",
+			"name" : "提尔瓦达",
+			"biography" : "升任船长后不久，提尔因训练失误而受伤。由于桑赫里精英的文化中，在医生手下流血等同于丧失荣誉，因此他的家人匆匆赶到事件现场将他接走，并由医生到家中为他治疗。在康复期间，西尔手工制作了一套老式的多米尔兽毛皮船长斗篷，从此总是披着它来提醒自己永不消沉。",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Logistics skill percentage.",
-				"tooltip" : "Receives a 5% per level bonus to Logistics skill percentage.",
-				"name" : "Logistics"
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：后勤学",
+				"name" : "后勤学"
 			}
 		},
 		"images" :
@@ -25,7 +25,7 @@
 		},
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -34,15 +34,16 @@
 		[
 			{
 				"level" : "basic",
-				"skill" : "logistics"
+				"skill" : "offence"
 			},
 			{
 				"level" : "basic",
-				"skill" : "pathfinding"
+				"skill" : "logistics"
 			}
 		],
 		
-		"specialty" : {
+		"specialty": //logistics bonus
+		{
 			"bonuses" : {
 				"logistics" : {
 					"targetSourceType" : "SECONDARY_SKILL",

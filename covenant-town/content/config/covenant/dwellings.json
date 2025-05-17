@@ -2,7 +2,7 @@
 	"core:creatureGeneratorCommon" : {
 		"types" : {
 			"cvSpirit" : {
-				"name" : "Spirit",
+				"name" : "精神兵营",
 				"creatures" : [[ "cvGrunt" ]],
 				"templates" : {
 					"default" : {
@@ -12,7 +12,7 @@
 				}
 			},
 			"cvPhantom" : {
-				"name" : "Phantom",
+				"name" : "幻象之间",
 				"creatures" : [[ "cvJackal" ]],
 				"templates" : {
 					"default" : {
@@ -22,7 +22,7 @@
 				}
 			},
 			"cvCorvette" : {
-				"name" : "Corvette",
+				"name" : "虫群核心",
 				"creatures" : [[ "cvDrone" ]],
 				"templates" : {
 					"default" : {	
@@ -32,7 +32,7 @@
 				}
 			},
 			"cvReplicator" : {
-				"name" : "Replicator",
+				"name" : "鬼面吊舱",
 				"creatures" : [[ "cvHunter" ]],
 				"templates" : {
 					"default" : {
@@ -42,7 +42,7 @@
 				}
 			},
 			"cvEliteDrop" : {
-				"name" : "Elite Drop",
+				"name" : "精英飞船",
 				"creatures" : [[ "cvElite" ]],
 				"guards" : true,
 				"templates" : {
@@ -53,7 +53,7 @@
 				}
 			},
 			"cvPortal" : {
-				"name" : "Portal of Te",
+				"name" : "传送接口",
 				"creatures" : [[ "cvMehamorf" ]],
 				"guards" : true,
 				"templates" : {
@@ -64,7 +64,7 @@
 				}
 			},
 			"cvSummit" : {
-				"name" : "Summit",
+				"name" : "尖峰议会",
 				"creatures" : [[ "cvHelion" ]],
 				"guards" : true,
 				"templates" : {
@@ -75,7 +75,7 @@
 				}
 			},
 			"cvAncientSummit" : {
-				"name" : "Ancient Summit",
+				"name" : "远古议会",
 				"creatures" : [[ "cvSiegesHelions" ]],
 				"guards" : true,
 				"templates" : {
@@ -86,7 +86,7 @@
 				}
 			},
 			"cvUfo" : {
-				"name" : "UFO",
+				"name" : "天外来客",
 				"creatures" : [[ "cvBriteres" ]],
 				"guards" : true,
 				"templates" : {

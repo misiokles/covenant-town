@@ -6,9 +6,9 @@
 			"siege" :
 			{
 				"shooter" : "cvGreatHunter",
-				"towerIconSmall" : "covenant/icons/arrowtowersmall",
-				"towerIconLarge" : "covenant/icons/arrowtowerslarge",
 				"imagePrefix" : "covenant/siege/sgfg",
+				"towerIconSmall" : "covenant/icons/towerSmall",
+				"towerIconLarge" : "covenant/icons/towerLarge",
 				"gate" :
 				{
 					"arch" : { "x" : 486, "y" : 232 },

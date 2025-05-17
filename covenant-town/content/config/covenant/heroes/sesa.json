@@ -5,13 +5,13 @@
 		"female" : true,
                  "texts" :
 		{
-			"name" : "Sesa Refum",
-			"biography" : "nothing here",
+			"name" : "塞萨瑞芬",
+			"biography" : "当塞萨瑞芬从小就得知了星盟的内在运作时，很快就对星盟的宗教结构感到沮丧。她发起了以疯狂混乱结束的异端起义，并且联合鬼面兽控制了星盟。异教徒领导人据说在04特区已经被全部消灭，但塞萨认为仍然会有漏网之鱼存在。",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Sorcery skill.",
-				"tooltip" : "Receives a 5% per level bonus to Sorcery skill.",
-				"name" : "Sorcery"
+				"description" : "在魔力技能上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：魔力",
+				"name" : "魔力"
 			}
 		},
 		
@@ -29,7 +29,7 @@
 		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -37,11 +37,16 @@
 		"skills" : 
 		[
 			{
-				"level" : "advanced",
+				"level" : "basic",
 				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
 			}
 		],
-		"specialty" : {
+		"specialty": //sorcery bonus
+		{
 			"bonuses" : {
 				"sorcery" : {
 					"targetSourceType" : "SECONDARY_SKILL",

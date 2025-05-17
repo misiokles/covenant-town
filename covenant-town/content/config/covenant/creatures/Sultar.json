@@ -3,11 +3,16 @@
 	{
 		"name" :
 		{
-			"plural" : "Sultars",
-			"singular" : "Sultar"
+			"plural" : "黑暗神父",
+			"singular" : "黑暗神父"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
 		},
 		"faction" : "covenant",
-		"aiValue" : 1070,
+		"aiValue" : 1000,
 		"attack" : 5,
 		"damage" :
 		{
@@ -15,12 +20,16 @@
 			 "min" : 7
 		},
 		"defense" : 5,
-		"fightValue" : 961,
+		"fightValue" : 1000,
+		"cost" :
+		{
+			"gold" : 140
+		},
 		"graphics" :
 		{
 			"animation" : "covenant/battle/sultar.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
-			"map" : "covenant/map/sultar.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+//			"map" : "covenant/map/sultar.def",
 			"iconSmall" : "covenant/iconsSmall/sultar.bmp",
 			"iconLarge" : "covenant/iconsBig/sultar.bmp",
 			"timeBetweenFidgets" : 1,
@@ -41,26 +50,24 @@
 			}
 		},
 
-		"growth" : 1,
+		"growth" : 9,
+		"hasDoubleWeek": false,
 		"hitPoints" : 60,
         "level" : 0,
 		"shots" : 24,
 		"special" : true,
 		"sound" :
 		{
-			"attack": "DFLYATTK.wav",
-			"defend": "DFLYDFND.wav",
-			"killed": "DFLYKILL.wav",
-			"move": "DFLYMOVE.wav",
-			"wince": "DFLYWNCE.wav"
+			"attack": "covenant/S212ATTK.wav",
+			"defend": "covenant/S212DFND.wav",
+			"killed": "covenant/S212KILL.wav",
+			"move": "covenant/S212MOVE.wav",
+			"shoot": "covenant/S212shot.wav",
+			"wince": "covenant/S212WNCE.wav"
 		},
 		"speed" : 5,
 		"abilities" :
 		{
-			"canShoot" :
-			{
-				"type" : "SHOOTER"
-			},
 			"magicResistance" :
 			{
 				"type" : "MAGIC_RESISTANCE",
@@ -84,8 +91,16 @@
 			"canCast" :
 			{
 				"type" : "SPELLCASTER",
-				"subtype" : "spell.weakness",
+				"subtype" : "spell.frenzy",
 				"val" : 3
+			},
+//			"shooter" :
+//			{
+//				"type" : "SHOOTER"
+//			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
 			}
 		}
 	}

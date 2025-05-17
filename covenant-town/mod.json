@@ -3,15 +3,12 @@
 	"description" : "VCMI Covenant town with new graphics",
 	"author" : "Kegolo, Bungie, Boose, zeryss, acidchalk",
 	"contact" : "http://heroescommunity.com/viewthread.php3?TID=37456",
-	"version" : "1.5.2",
+	"version" : "1.5.3",
 	"modType" : "Town",
-	"compatibility" :
-	{
-		"min" : "1.5.0"
-	},	
-	"changelog" :
-	{
-		"1.5.2"   : [ "Update to vcmi-1.5 format" ]
+	"language": "chinese",
+	"chinese": {
+		"name": "星盟",
+		"description": "VCMI的城镇星盟，使用了新图像。"
 	},
 	"factions" :
 	[
@@ -69,5 +66,6 @@
 		"config/covenant/heroes/yayal.json",
 		"config/covenant/heroes/arbiter.json"
 	],
-	"objects" : [ "config/covenant/dwellings" ]
+	"objects" : [ "config/covenant/dwellings" ],
+	"spells" : [ "config/covenant/spells/moat.json" ]
 }

@@ -8,22 +8,22 @@
 		},
 		"name" :
 		{
-			"plural" : "Siege Helions",
-			"singular" : "Siege Helion"
+			"plural" : "空间战魂",
+			"singular" : "空间战魂"
 		},
 		"faction": "covenant",
 		"aiValue" : 33981,
 		"fightValue" : 24709,
-		"attack" : 26,
+		"attack" : 28,
 		"defense" : 28,
 		"cost" :
 		{
-			"gold" : 6000
+			"gold" : 8000, "mercury" : 3
 		},
 		"damage" :
 		{
-			 "min" : 50,
-			 "max" : 60
+			 "min" : 45,
+			 "max" : 65
 		},
 		"speed" : 12,
 		"graphics" :
@@ -41,7 +41,7 @@
 			},
             "missile" :
 			{
-				"projectile" : "CPRGOGX.def",
+				"projectile" : "covenant/battle/projectile/shot211.def",
 				"attackClimaxFrame" : 1,
 				"offset" :
 				{
@@ -59,51 +59,140 @@
 		"doubleWide" : true,
 		"growth" : 1,
 		"level" : 8,
-		"shots" : 24,	
+		"shots" : 2,	
 		"sound" :
 		{
-			"attack" : "covenant/atak-high.wav",
-			"defend" : "covenant/defend-high.wav",
-			"killed" : "covenant/kill-high.wav",
-			"move"   : "covenant/move-high.wav",
-			"wince"  : "covenant/wince-high.wav"
+			"attack" : "covenant/S211ATTK.wav",
+			"defend": "covenant/S211DFND.wav",
+			"killed": "covenant/S211KILL.wav",
+			"move": "covenant/S211MOVE.wav",
+			"shoot": "covenant/S211shot.wav",
+			"wince": "covenant/S211WNCE.wav"
 		},
 		"abilities" :
 		{
-			"canShoot" :
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			 "canshoot" :
 			{
 				"type" : "SHOOTER"
-			},		
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
 			"nonliving":
 			{	
 				"type" : "NON_LIVING"
+			},
+			"KING3":
+			{
+				"type" : "KING",
+				"val" : 3
+				
 			},
 			"attacksAllAdjacent":
 			{
 				"type":"ATTACKS_ALL_ADJACENT"
             },
-			"EARTH_IMMUNITY"	:
+			 "shootsAllAdjacent" : 
 			{
-				"type" : "SPELL_SCHOOL_IMMUNITY",
-				"subtype" : "earth"
-			},
-			 "airShield":
-			{
-				"type":"GENERAL_DAMAGE_REDUCTION",
-				"subtype": "damageTypeRanged",
-				"val" :70
+				"type" : "SHOOTS_ALL_ADJACENT"
 			},
 			"fearless" :
 			{
 				"type" : "FEARLESS"
 			},
-			"directDamageImmunity" :
+			"doubleDamage" :
 			{
-				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "any",
-				"val" : 100
+				"type" : "DOUBLE_DAMAGE_CHANCE",
+				"val" : 20
+			}	
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION" //shield effect
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEAR"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+						"subtype" : "any",
+						"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 0, 0, 0, 0, 100, 100, 100, 100, 100, 100 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
 			}
-		}
+		]
 	}
 }
 

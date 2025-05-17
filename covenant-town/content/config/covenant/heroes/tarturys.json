@@ -5,13 +5,13 @@
 		"female" : false,
 		"texts" :
 		{
-			"name" : "Tarturys",
-			"biography" : "nothing here",
+			"name" : "塔尔图斯",
+			"biography" : "在异端起义期间，塔尔图斯率领鬼面兽的队伍，从精英手中夺取了星盟的控制权。他不仅掌握传说中的重力锤技术，而且他抵抗三大先知思想控制的能力使得鬼面兽一族在这场风暴中获得了完全胜利。",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Resistance skill.",
-				"tooltip" : "Receives a 5% per level bonus to Resistance skill.",
-				"name" : "Resistance"
+				"description" : "在抵抗力上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：抵抗力",
+				"name" : "抵抗力"
 			}
 		},
 		"images" :
@@ -24,19 +24,24 @@
 
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
 		"skills" : 
 		[
 			{
-				"level" : "advanced",
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
 				"skill" : "resistance"
 			}
 		],
 		
-		"specialty" : {
+		"specialty": //abyssSeahorse
+		{
 			"bonuses" : {
 				"resistance" : {
 					"type" : "MAGIC_RESISTANCE",

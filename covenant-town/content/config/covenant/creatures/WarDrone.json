@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "War Drones",
-			"singular" : "War Drone"
+			"plural" : "雄蜂",
+			"singular" : "雄蜂"
 		},
 		"advMapAmount" :
 		{
@@ -13,29 +13,29 @@
 		},
 		"faction" : "covenant",
 		"aiValue" : 347,
-		"attack" : 11,
+		"attack" : 8,
 		"hasDoubleWeek" : true,
         "cost" :
 		{
-			"gold" : 275
+			"gold" : 240
 		},
 		"damage" :
 		{
-			 "max" : 7,
+			 "max" : 6,
 			 "min" : 4
 		},
-		"defense" : 6,
+		"defense" : 10,
 		"fightValue" : 348,
 		"graphics" :
 		{
 			"animation" : "covenant/battle/maniac.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
 			"map" : "covenant/map/maniac.def",
 			"iconSmall" : "covenant/iconsSmall/maniac.bmp",
 			"iconLarge" : "covenant/iconsBig/maniac.bmp",
 			"timeBetweenFidgets" : 1
         },
-		"growth" : 7,
+		"growth" : 8,
 		"hitPoints" : 20,
 		"level" : 3,
 		"sound" :
@@ -46,19 +46,58 @@
 			"move" : "covenant/S202MOVE.wav",
 			"wince" : "covenant/S202WNCE.wav"
 		},
-		"speed" : 8,
+		"speed" : 15,
 		"abilities" :
 		{
 			"canFly" : 
 			{
 				"type" : "FLYING"
-                        },
-			 "poisonous" : {
-				"addInfo" : 0,
-				"subtype" : "spell.poison",
-				"type" : "SPELL_AFTER_ATTACK",
-				"val" : 40
 			}
-		}				
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]				
 	}
 }

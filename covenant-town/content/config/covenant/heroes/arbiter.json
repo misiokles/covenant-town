@@ -2,16 +2,16 @@
 	"arbiter" : 
 	{
 		"class" : "slipspacer",
-		"female" : true,
+		"female" : false,
 		"texts" :
 		{
-			"name" : "The Arbiter",
-			"biography" : "The Arbiter is a ceremonial, religious, and political rank bestowed upon Covenant Elites. The rank was given to this disgraced commander as a way to atone for his failures, and it is expected for him to die serving the Covenant leadership.", 
+			"name" : "帕鲁托",
+			"biography" : "帕鲁托通过在星盟与人类许多场战役中的优异表现赢得了猎人的职阶。他的策略被认为是懦弱的，因为他会用燃料棒弹药武装他的友军，并指挥他们处处为自己的部队提供掩护。最终，他的战术实力得到了承认，帕鲁托现在骄傲地成为鬼面兽，精英和猎人的指挥官。", 
 			"specialty" :
 			{
-				"description" : "The Arbiter is able to train elites into a higher class of warrior.",
-				"tooltip" : "Special Training.",
-				"name" : "Special Training"
+				"description" : "达到5级以后提高精英战士或精英剑士的攻击力与防御力。",
+				"tooltip" : "生物强化：精英战士",
+				"name" : "精英战士"
 			}
 		},
 		"images" :
@@ -25,18 +25,18 @@
 		"army" :
 		[
 			{
-				"creature" : "cvElite",
-				"max" : 4,
+				"creature" : "cvGrunt",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "ammoCart",
+				"max" : 1,
 				"min" : 1
 			},
 			{
 				"creature" : "cvElite",
-				"max" : 4,
-				"min" : 1
-			},
-			{
-				"creature" : "cvElite",
-				"max" : 4,
+				"max" : 2,
 				"min" : 1
 			}
 		],
@@ -44,24 +44,13 @@
 		"skills" :
 		[
 			{
-				"level" : "basic",
-				"skill" : "logistics"
-			},
-			{
-				"level" : "basic",
-				"skill" : "scouting"
+				"level" : "advanced",
+				"skill" : "offence"
 			}
 		],
 		
-		"specialty" : {
-			"base" : {
-				"addInfo" : "creature.cvElite3",
-				"type" : "SPECIAL_UPGRADE"
-			},
-			"bonuses" : {
-				"cvElite2cvElite3" : { "subtype" : "creature.cvElite" },
-				"cvElite22cvElite3" : { "subtype" : "creature.cvElite2" }
-			}
+		"specialty":  {
+			"creature" : "cvElite"
 		}
 	}
 }

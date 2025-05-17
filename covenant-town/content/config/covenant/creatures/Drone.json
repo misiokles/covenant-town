@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Drones",
-			"singular" : "Drone"
+			"plural" : "异虫",
+			"singular" : "异虫"
 		},
 		"advMapAmount" :
 		{
@@ -13,7 +13,7 @@
 		},
 		"faction" : "covenant",
 		"aiValue" : 347,
-		"attack" : 9,
+		"attack" : 7,
 		"hasDoubleWeek" : true,
         "cost" :
 		{
@@ -21,21 +21,21 @@
 		},
 		"damage" :
 		{
-			 "max" : 7,
-			 "min" : 4
+			 "max" : 6,
+			 "min" : 3
 		},
-		"defense" : 6,
+		"defense" : 9,
 		"fightValue" : 348,
 		"graphics" :
 		{
 			"animation" : "covenant/battle/pyro.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
 			"map" : "covenant/map/pyro.def",
 			"iconSmall" : "covenant/iconsSmall/pyro.bmp",
 			"iconLarge" : "covenant/iconsBig/pyro.bmp",
 			"timeBetweenFidgets" : 1
         },
-		"growth" : 7,
+		"growth" : 8,
 		"hitPoints" : 20,
 		"level" : 3,
 		"upgrades":
@@ -50,19 +50,75 @@
 			"move" : "covenant/S201MOVE.wav",
 			"wince" : "covenant/S201WNCE.wav"
 		},
-		"speed" : 6,
+		"speed" : 10,
 		"abilities" :
 		{
 			"canFly" : 
 			{
 				"type" : "FLYING"
-            },
-			 "poisonous" : {
-				"addInfo" : [0, 2],
-				"subtype" : "spell.poison",
-				"type" : "SPELL_AFTER_ATTACK",
-				"val" : 20
 			}
-		}				
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.poison",
+					"addInfo" : 1001 //71 - poison
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
+			}
+		]				
 	}
 }

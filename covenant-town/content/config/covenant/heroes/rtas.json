@@ -1,17 +1,17 @@
 {
 	"rtas" : 
 	{
-		"class" : "councillor",
-		"female" : true,
+		"class" : "slipspacer",
+		"female" : false,
                  "texts" :
 		{
-			"name" : "Rtas Vadym",
-			"biography" : "nothing here",
+			"name" : "塔斯维顿",
+			"biography" : "为了杀死洪魔，塔斯维顿使用工程师站设置了一个朝向太阳的跃迁飞船航线。在那段时间里，有人发现拉加特号已经遭到感染，塔斯不得不和他受感染的副司令库苏瓦伊作战。他命令队员对他的胳膊和脸部进行打击，割断他的左下颌骨，并给了完全感染的库苏瓦伊致命一击。",
 			"specialty" : 
 			{
-				"description" : "Hero can cast the Haste spell with increased effectiveness.",
-				"tooltip" : "Hero can cast the Haste spell with increased effectiveness.",
-				"name" : "Haste"
+				"description" : "在理财术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：理财术",
+				"name" : "理财术"
 			}
 		},
 
@@ -22,14 +22,9 @@
 			"large" : "covenant/heroes/rtas/portrait-large.bmp",
 			"small" : "covenant/heroes/rtas/portrait-small.bmp"
 		},
-
-		"spellbook" :
-		[
-			"haste"
-		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -38,20 +33,24 @@
 		[
 			{
 				"level" : "basic",
-				"skill" : "wisdom"
+				"skill" : "offence"
 			},
 			{
 				"level" : "basic",
-				"skill" : "waterMagic"
+				"skill" : "estates"
 			}
 		],
 		
-		"specialty": {
-			"bonuses": {
-				"haste" : {
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.haste",
-						"val": 5
+		"specialty": //defense bonus
+		{
+			"bonuses" : {
+				"estates" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
 				}
 			}
 		}

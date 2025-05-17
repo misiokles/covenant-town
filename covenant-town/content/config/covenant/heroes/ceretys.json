@@ -6,13 +6,13 @@
 		"female" : false,
 		"texts" :
 		{
-			"name" : "Ceretys",
-			"biography" : "nothing here",
+			"name" : "塞尔蒂斯",
+			"biography" : "被追随者称为伟大的贾斯丁，塞尔蒂斯是鬼面兽的传奇人物，因为他超凡的个人魅力和过人的雄辩风格。虽然精英指挥官的职位十分稀缺，但精英们会因为跟随异族的塞尔蒂斯而名声受损。星盟中鲜有人会效仿其行事，因为他们仍然尊重上级精英的理想。",
 			"specialty" :
 			{
-				"description" : "Increases kingdom's income by 350 gold per day.",
-				"tooltip" : "Increases kingdom's income by 350 gold per day.",
-				"name" : "+350 Gold"
+				"description" : "达到4级以后提高鬼面兽或鬼面兽首领的攻击力与防御力。",
+				"tooltip" : "生物强化：鬼面兽",
+				"name" : "鬼面兽"
 			}
 		},
 		"images" :
@@ -25,7 +25,7 @@
 
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -34,22 +34,16 @@
 		[
 			{
 				"level" : "basic",
-				"skill" : "wisdom"
+				"skill" : "tactics"
 			},
 			{
 				"level" : "basic",
-				"skill" : "estates"
+				"skill" : "offence"
 			}
 		],
 		
 		"specialty": {
-			"bonuses": {
-				"gold" : {
-						"type": "GENERATE_RESOURCE",
-						"subtype": "resource.gold",
-						"val": 350
-                }
-			}
+			"creature" : "cvHunter"
 		}
 	}
 }

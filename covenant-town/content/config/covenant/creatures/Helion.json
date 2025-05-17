@@ -1,61 +1,142 @@
 {
 	"cvHelion" : {
 		"abilities" : {
-			"EARTH_IMMUNITY"	:
+			"canFly" : 
 			{
-				"type" : "SPELL_SCHOOL_IMMUNITY",
-				"subtype" : "earth"
+				"type" : "FLYING"
 			},
-			 "airShield":
+			 "strikeAndReturn" : 
 			{
-				"type":"GENERAL_DAMAGE_REDUCTION",
-				"subtype": "damageTypeRanged",
-				"val" :40
-			},
-			"fearless" :
-			{
-				"type" : "FEARLESS"
-			},
-			"directDamageImmunity" :
-			{
-				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "any",
-				"val" : 100
+				"type" : "RETURN_AFTER_STRIKE"
 			},		
+			"KING3":
+			{
+				"type" : "KING",
+				"val" : 3		
+			},
 			"nonliving":
 			{	
 				"type" : "NON_LIVING"
 			}
 		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 2, 3, 3, 4, 4, 4]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DEFENSIVE_STANCE"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+			}
+		],
 		"advMapAmount" : {"max" : 10, "min" : 4},
 		"aiValue" : 6147,
-		"attack" : 26,
+		"attack" : 18,
 		"cost" : { "gold" : 2000, "mercury" : 1 },
 		"damage" : {"max" : 40, "min" : 30},
-		"defense" : 30,
+		"defense" : 18,
 		"faction" : "covenant",
 		"fightValue" : 4950,
 		"graphics" : {
 			"animation" : "covenant/battle/CR209.DEF",
-			"animationTime" : { "attack" : 1, "idle" : 4, "walk" : 1.30 },
+			"animationTime" : { "attack" : 1,  "idle" : 4, "walk" : 1.30 },
 			"map" : "covenant/map/7aa.def",
 			"iconSmall" : "covenant/iconsSmall/CPrS209F.bmp",
 			"iconLarge" : "covenant/iconsBig/CPrL209B.bmp",
 			"timeBetweenFidgets" : 1
 		},
-		"growth" : 1,
-		"hitPoints" : 180,
+		"growth" : 2,
+		"hitPoints" : 165,
         "doubleWide" : true,
 		"level" : 7,
-		"name" : { "plural" : "Helions", "singular" : "Helion" },
+		"name" : { "plural" : "空间鬼魂", "singular" : "空间鬼魂" },
 		"sound" : {
-			"attack" : "covenant/atak-low.wav",
-			"defend" : "covenant/defend-low.wav",
-			"killed" : "covenant/kill-low.wav",
-			"move" : "covenant/move-low.wav",
-			"wince" : "covenant/wince-low.wav"
+			"attack" : "covenant/S209ATTK.wav",
+			"defend": "covenant/S209DFND.wav",
+			"killed": "covenant/S209KILL.wav",
+			"move": "covenant/S209MOVE.wav",
+			"wince": "covenant/S209WNCE.wav"
 		},
-		"speed" : 8,
+		"speed" : 16,
 		"upgrades" : [ "cvHeavyHelion" ]
 	}
 }

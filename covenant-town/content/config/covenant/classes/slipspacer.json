@@ -1,7 +1,7 @@
 {
 	"slipspacer" :
 	{
-		"name" : "Slipspacer",
+		"name" : "开拓者",
 		"commander" : "cvSultar",
 		"animation" : { "battle" : { "female" : "covenant/heroes/battlemight", "male" : "covenant/heroes/battlemight" } },
 		
@@ -13,8 +13,8 @@
 
 		"primarySkills" :
 		{
-			"attack"     : 0,
-			"defence"    : 4,
+			"attack"     : 3,
+			"defence"    : 1,
 			"spellpower" : 1,
 			"knowledge"  : 1
 		},

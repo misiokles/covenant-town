@@ -6,13 +6,13 @@
 
 		"texts" :
 		{
-			"name" : "Fal Chavum",
-			"biography" : "nothing here",
+			"name" : "法尔查文",
+			"biography" : "人们认为法尔查文是运气不好，所以赢得了这个精英指挥官的职位。在星盟-人类战争中，他相继成为许多不同战队的一员，但在所有这些战队中，他是唯一一个能够存活到战后的人。讽刺的是，法尔认为这代表他非常幸运。",
 			"specialty" :
 			{
-				"description" : "Starts with Advanced Leadership.",
-				"tooltip" : "Starts with Advanced Leadership.",
-				"name" : "Leadership"
+				"description" : "在幸运术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：幸运术",
+				"name" : "幸运术"
 			}
 		},
 		
@@ -25,7 +25,7 @@
 		},
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -33,11 +33,26 @@
 		"skills" :
 		[
 			{
-				"level" : "advanced",
-				"skill" : "leadership"
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
 			}
 		],
 		
-		"specialty": {}
+		"specialty": //logistics bonus
+		{
+			"bonuses" : {
+				"luck" : {
+					"type" : "LUCK",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
 	}
 }

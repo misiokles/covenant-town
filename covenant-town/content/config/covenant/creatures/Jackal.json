@@ -3,34 +3,34 @@
 	{
 		"name" :
 		{
-			"plural" : "Jackals",
-			"singular" : "Jackal"
+			"plural" : "豺狼步兵",
+			"singular" : "豺狼步兵"
 		},
 		"advMapAmount" :
 		{
 			 "max" : 30,
-			 "min" : 25
+			 "min" : 16
 		},
 		"faction" : "covenant",
 		"aiValue" : 179,
-		"attack" : 5,
+		"attack" : 6,
 		"hasDoubleWeek" : true,
                 "cost" :
 		{
-			"gold" : 110
+			"gold" : 120
 		},
 		"damage" :
 		{
-			 "max" : 5,
+			 "max" : 4,
 			 "min" : 2
 		},
-		"defense" : 5,
+		"defense" : 7,
 		"fightValue" : 189,
 		"horde" : 6,
 		"graphics" :
 		{
 			"animation" : "covenant/battle/CR197.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
 			"map" : "covenant/map/gruntsoldier.def",
 			"iconSmall" : "covenant/iconsSmall/CPrS197F.bmp",
 			"iconLarge" : "covenant/iconsBig/CPrL197B.bmp",
@@ -52,22 +52,21 @@
 			}
 		},
 
-		"growth" : 9,
-		"hitPoints" : 12,
+		"growth" : 8,
+		"hitPoints" : 20,
               	"level" : 2,
-		"shots" : 8,
+//		"shots" : 8,
 		"upgrades":
 		[
 			"cvJackalMajor"
 		],
 		"sound" :
 		{
-			"attack" : "covenant/S198ATTK.wav",
-			"defend" : "covenant/S198DFND.wav",
-			"killed" : "covenant/S198KILL.wav",
-			"move"    : "covenant/S198MOVE.wav",
-			"wince" : "covenant/S198WNCE.wav",
-            "shoot" : "covenant/S198SHOT.wav"
+			"attack" : "covenant/S199ATTK.wav",
+			"defend": "covenant/S199DFND.wav",
+			"killed": "covenant/S199KILL.wav",
+			"move": "covenant/S199MOVE.wav",
+			"wince": "covenant/S199WNCE.wav"
 		},
 		"speed" : 4,
 		"abilities" :
@@ -77,13 +76,84 @@
 				"type" : "GENERAL_DAMAGE_REDUCTION",
 				"subtype" : "damageTypeMelee",
 				"val" : 10
-            },
+                         },
 			"airShield":
 			{
 				"type":"GENERAL_DAMAGE_REDUCTION",
 				"subtype": "damageTypeRanged",
 				"val" : 10
 			}	
-		}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 12]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged", //shield effect
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 12]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.mirth",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 2 ]
+			}
+		]
 	}
 }

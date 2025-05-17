@@ -5,13 +5,13 @@
 		"female" : true,
                  "texts" :
 		{
-			"name" : "Vergil",
-			"biography" : "nothing here",
+			"name" : "维吉尔",
+			"biography" : "当“星盟-地球战争”和对新蒙巴萨的突袭爆发时，维吉尔试着解救受困于萨迪斯的父亲，守卫当地的地方民兵、警察和UNSC海军陆战队员调度了许多载具来协助她。后来维吉尔向UNSC投降，使自己被维罗尼卡·达雷及其ODST特战小组俘获，向UNSC提供了有关星盟的重要信息，以及他们对新蒙巴萨的意图。",
 			"specialty" : 
 			{
-				"description" : "Hero can cast the Water Walk spell with increased effectiveness.",
-				"tooltip" : "Hero can cast the Water Walk spell with increased effectiveness.",
-				"name" : "Water Walk"
+				"description" : "在学习能力上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：学习能力",
+				"name" : "学习能力"
 			}
 		},
 
@@ -22,14 +22,9 @@
 			"large" : "covenant/heroes/vergil/portrait-large.bmp",
 			"small" : "covenant/heroes/vergil/portrait-small.bmp"
 		},
-
-		"spellbook" :
-		[
-			"waterWalk"
-		],
 		"army" :
 		[
-			{ "creature" : "cvGrunt", "min" : 10, "max" : 15 },
+			{ "creature" : "cvGrunt", "min" : 15, "max" : 25 },
 			{ "creature" : "cvJackal", "min" : 6, "max" : 9 },
 			{ "creature" : "cvDrone", "min" : 4, "max" : 6}
 		],
@@ -41,16 +36,19 @@
 			},
 			{
 				"level" : "basic",
-				"skill" : "waterMagic"
+				"skill" : "learning"
 			}
 		],
 		
-		"specialty": {
-			"bonuses": {
-				"waterWalk" : {
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.waterWalk",
-						"val": 5
+		"specialty": //learning bonus
+		{
+			"bonuses" : {
+				"learning" : {
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
 				}
 			}
 		}
